@@ -1,13 +1,18 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Hello World</h1>
-    </div>
-  );
+import { Cards, Chart, CountryPicker } from './components';
+import styles from './App.module.css';
+
+
+class App extends React.Component{
+    render(){
+        return(
+            <div className={styles.container}>
+                <Cards />
+                <Chart />
+                <CountryPicker />
+            </div>
+        )
+    }
 }
-
 export default App;
